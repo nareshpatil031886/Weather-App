@@ -19,7 +19,7 @@ A simple React weather application that fetches real-time weather data using a w
 ### **1. Clone the Repository**  
 ```sh
 git clone https://github.com/nareshpatil031886/Weather-App.git
-cd weather-app
+cd Weather-App
 ```
 
 ### **2. Install Dependencies**  
