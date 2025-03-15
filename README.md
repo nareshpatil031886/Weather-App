@@ -5,7 +5,6 @@ A simple React weather application that fetches real-time weather data using a w
 ## **📌 Features**  
 ✅ Search weather by city name  
 ✅ Display temperature, humidity, and wind speed  
-✅ Dynamic weather icons  
 ✅ Fully responsive design  
 
 ## **🔧 Technologies Used**  
