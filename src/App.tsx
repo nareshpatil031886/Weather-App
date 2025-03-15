@@ -10,13 +10,13 @@ function App() {
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
+  const apiKey  = import.meta.env.VITE_WEATHER_API_KEY || '0e9aba14372e8841c7b15470a8830f85'
   const fetchWeather = async (searchCity: string) => {
     setLoading(true);
     setError(null);
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&units=metric&appid=0e9aba14372e8841c7b15470a8830f85`
+        `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&units=metric&appid=${apiKey}`
       );
       
       if (!response.ok) {
